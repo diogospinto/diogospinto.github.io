@@ -13,19 +13,21 @@ font-family: 'Montserrat', sans-serif; */
 body {
     margin: 0;
     padding: 0;
-    background-color: #060606;
-    color: azure;
+    background-color: white;
+    color: black;
 }
 
 header {
     width: 100%;
-    background-color: #060606;
+    background-color: white;
     text-align: center;
+    position: fixed;
+    top: 0%;
 }
 
 h1 a {
     text-decoration: none;
-    color: azure;
+    color: black;
 }
 
 div {
@@ -43,10 +45,11 @@ nav ul li {
 
 li a {
     text-decoration: none;
-    color: aliceblue;
+    color: black;
 }
 
 #main div {
-    background-image: url('Images/black-scale-futur.png');
-    background-repeat: no-repeat;
+    margin-top: 180px;
+    width: 40%;
+    text-align: justify;
 }
