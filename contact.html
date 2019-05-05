@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Sommet Noir - Contact Us</title>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.fontSize = "12px";
+            } else {
+                document.getElementById("header").style.fontSize = "13px";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
