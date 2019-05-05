@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Bentham|Cormorant+Garamond|Exo|Montserrat|Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 /* font-family: 'Exo', sans-serif;
 font-family: 'Bentham', serif;
 font-family: 'Yeseva One', cursive;
 font-family: 'Cormorant Garamond', serif;
-font-family: 'Montserrat', sans-serif; */
+font-family: 'Montserrat', sans-serif; 
+font-family: 'Raleway', sans-serif;
+font-family: 'Work Sans', sans-serif; */
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 body {
@@ -15,6 +19,8 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    line-height: 1.2;
+    font-size: 15px;
 }
 
 header {
@@ -23,17 +29,37 @@ header {
     text-align: center;
     position: fixed;
     top: 0%;
+    padding: 0;
+    font-size: 13px;
+}
+
+header h1 a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    text-align: center; 
+}
+
+header p {
+    font-size: 12px;
+}
+
+div#header {
+    text-align: center;
+    margin: auto;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
 }
 
 h1 a {
     text-decoration: none;
     color: black;
-}
-
-div {
-    width: 60%;
-    margin: auto;
-    text-align: center;
 }
 
 nav ul li {
@@ -48,8 +74,96 @@ li a {
     color: black;
 }
 
+div#int-orders {
+    margin: 140px auto;
+    width: 50%;
+    text-align: left;
+}
+
+div#int-orders p strong {
+    font-size: 15px;
+}
+
+div#int-orders a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 #main div {
-    margin-top: 180px;
+    margin: 140px auto auto auto;
     width: 40%;
     text-align: justify;
+}
+
+div#contact-form {
+    margin: 120px auto auto auto;
+    display: grid;
+}
+
+#contact-form h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+form p {
+    text-align: left;
+    margin-left: 40px;
+}
+
+input[name="first-name"], input[name="last-name"], input[name="email"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+select[name="info-type"] {
+    width: 43%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+
+input[name="subject"], textarea[name="message"] {
+    width: 86%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    resize: none;
+}
+
+button[name="submit"] {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    transition: background-color, color, border;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+button[name="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100%;
 }
