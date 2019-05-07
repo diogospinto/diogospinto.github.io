@@ -43,11 +43,6 @@ header p {
     font-size: 12px;
 }
 
-div#header {
-    text-align: center;
-    margin: auto;
-}
-
 hr {
     padding: 0;
     margin: 0;
@@ -60,6 +55,11 @@ h2 {
 h1 a {
     text-decoration: none;
     color: black;
+}
+header nav {
+    width: 60%;
+    text-align: center;
+    margin: auto;
 }
 
 nav ul li {
@@ -75,9 +75,9 @@ li a {
 }
 
 div#int-orders {
-    margin: 140px auto;
+    margin: 140px auto auto auto;
     width: 50%;
-    text-align: left;
+    text-align: justify;
 }
 
 div#int-orders p strong {
