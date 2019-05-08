@@ -50,16 +50,28 @@ hr {
 
 h2 {
     text-align: center;
+    padding: 0;
 }
 
 h1 a {
     text-decoration: none;
     color: black;
 }
+div#header {
+    text-align: center;
+    margin: auto;
+}
+
 header nav {
     width: 60%;
     text-align: center;
     margin: auto;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -75,9 +87,10 @@ li a {
 }
 
 div#int-orders {
-    margin: 140px auto auto auto;
+    margin: 140px auto 60px auto;
     width: 50%;
     text-align: justify;
+    padding-bottom: 60px;
 }
 
 div#int-orders p strong {
@@ -166,4 +179,18 @@ button[name="submit"]:hover {
 
 footer {
     width: 100%;
+    background: white;
+    padding: 0;
+    margin-bottom: 0;
+    min-height: 60px;
+}
+
+div.footer {
+    width: 60%;
+    margin: auto;
+}
+
+div.footer ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
 }
